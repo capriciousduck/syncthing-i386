@@ -1,5 +1,6 @@
 ARG GOVERSION=latest
-FROM i386/golang:$GOVERSION AS builder
+#FROM i386/golang:$GOVERSION AS builder
+FROM i386/golang:latest AS builder
 
 WORKDIR /src
 COPY . .
